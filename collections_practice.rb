@@ -54,10 +54,11 @@ end
 def organize_schools(array)
   new_hash = Hash.new
   iter_array = []
+  #fill the iter_array with location
   array.each do |e|
-    new_hash[e[1][:location]] = [] #new_array << e[0]
     iter_array << e[1][:location]
   end
+  #make location to be only unique locations
   iter_array = iter_array.uniq
   new_array = []
   for i in 0..iter_array.length do
@@ -69,5 +70,4 @@ def organize_schools(array)
     new_array = []
   end
   new_hash
-  #array
 end
