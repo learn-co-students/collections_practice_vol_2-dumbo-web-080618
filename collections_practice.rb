@@ -68,10 +68,8 @@ def organize_schools(schools)
     city_arr.each do |cities|
         final_hash[cities] = []
         schools.each do |school, info|
-            info.each do |loca, city|
-                if  info.has_value?(cities)
-                    final_hash[cities] << school
-                end
+            if  info.has_value?(cities)
+                final_hash[cities] << school
             end
         end
     end
