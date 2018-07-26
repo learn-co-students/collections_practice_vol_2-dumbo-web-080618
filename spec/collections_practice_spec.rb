@@ -1,4 +1,5 @@
-require 'spec_helper'
+require_relative 'spec_helper'
+require_relative '../collections_practice'
 
 describe 'collections practice vol 2.' do
 
