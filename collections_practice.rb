@@ -22,8 +22,6 @@ def count_elements(array)
   end
 end
 
-
-
 def merge_data(keys,data)
     merge_data = []
     keys.each do |person|
@@ -37,7 +35,9 @@ def merge_data(keys,data)
       end
       merge_data
     end
-  
+
+
+
 
 def find_cool(arrayOfObj)
   array = [] 
