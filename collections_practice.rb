@@ -24,15 +24,15 @@ end
 
 def merge_data(keys, data)
   array = []
-  data.each { |describe|
-    describe.each { |name, value|
-      keys.each { |key_name|
+  data.each do |describe|
+    describe.each do |name, value|
+      keys.each do{ |key_name|
         if key_name.values[0] == name
           array << key_name.merge(value)
         end
-      }
-    }
-  }
+      end
+    end
+  end
   array
 end
 
